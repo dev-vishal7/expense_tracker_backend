@@ -10,7 +10,8 @@ const app = express();
 const PORT = 8080;
 
 // MongoDB connection string (replace <password>, <dbname>, <cluster>)
-const MONGO_URI = "mongodb://localhost:27017/expense_tracker";
+const MONGO_URI =
+  "mongodb://hydramote7272:VmsYDxFSCQiobVVX@cluster0-shard-00-00.echtq.mongodb.net:27017,cluster0-shard-00-01.echtq.mongodb.net:27017,cluster0-shard-00-02.echtq.mongodb.net:27017/expense_tracker?ssl=true&replicaSet=atlas-dq7sfs-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0";
 
 // Middleware to parse JSON requests
 app.use(express.json());

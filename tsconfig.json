@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "outDir": "./dist", // Make sure this is set to the correct output folder
     "module": "commonjs",
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true,
-    "esModuleInterop": true
-  }
+    "target": "es6",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": ["src/**/*.ts"], // Include the TypeScript files from the source folder
+  "exclude": ["node_modules"]
 }
